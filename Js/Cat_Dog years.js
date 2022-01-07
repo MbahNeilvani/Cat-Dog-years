@@ -22,10 +22,10 @@ let catYear = 15
 let dogYear = 15
 
 function catAndDogYears(humanYears,catYears,dogYears){
- if(let i = 5; i >= catAndDogYears.length; i++ ){
+//  if(let i = 5; i >= catAndDogYears.length; i++ ){
 
- }
-}
+//  }
+// }
 
 // Solution
 
@@ -52,7 +52,7 @@ const humanYearsCatYearsDogYears = (humanYears) => {
 
 //Another 
 
-var humanYearsCatYearsDogYears = function(humanYears) {
+var humanYearsCatYearsDogYears = function(humanYears){
     var catYears = 0;
     var dogYears = 0;
     
@@ -69,3 +69,10 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   
     return [humanYears, catYears, dogYears];
 }
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+    if(humanYears >= 2) {
+      return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+    }
+    return [humanYears, 15, 15];
+  };
