@@ -70,9 +70,32 @@ var humanYearsCatYearsDogYears = function(humanYears){
     return [humanYears, catYears, dogYears];
 }
 
+// Another
+
 var humanYearsCatYearsDogYears = function(humanYears) {
     if(humanYears >= 2) {
       return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
     }
     return [humanYears, 15, 15];
   };
+
+  // Another
+
+  var humanYearsCatYearsDogYears = function(humanYears) {
+    let CatYears
+    let DogYears
+    if(humanYears==1){
+      CatYears = 15
+      DogYears = 15
+    }
+    else if(humanYears==2){
+      CatYears = 24
+      DogYears = 24
+    }
+    else if(humanYears>2){
+      CatYears = 15 + 9 + ((humanYears-2)*4)
+      DogYears = 15 + 9 + ((humanYears-2)*5)
+    }
+    
+    return [humanYears,CatYears,DogYears];
+  }
